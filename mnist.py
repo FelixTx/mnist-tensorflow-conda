@@ -18,7 +18,7 @@ y = tf.matmul(x,W) + b #or use directly tf.nn.softmax( tf.matmul(x,W) + b )
 # softmax => normalize(exp(x))
 
 
-# TRAIN : stochastic regression with cross entropy function to get cost
+# TRAIN : logistic regression with stochastic gradient on cross entropy function 
 
 cross_entropy = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(y, y_))
 
